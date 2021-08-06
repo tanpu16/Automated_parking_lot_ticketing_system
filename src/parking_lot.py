@@ -1,4 +1,4 @@
-import heapq
+import heapq as hq
 
 class ParkingLot:
     def __init__(self):
@@ -7,17 +7,11 @@ class ParkingLot:
         self.slot_car_mapping = dict()
         
     def create_parking_lot(self,in_slots):
-        print("Created a parking lot with {} lots".format(in_slots))
-        for s in range(1,in_slots+1):
-            heapq.heappush(self.available_parkinglots,s)
-        return True
-        
-        def create_parking_lot(self,in_slots):
-        print("Created a parking lot with {} lots".format(in_slots))
+        print("Created a parking lot with {} slots".format(in_slots))
         for s in range(1,in_slots+1):
             hq.heappush(self.available_parkinglots,s)
         return True
-    
+        
     def getNearestEmptySlot(self):
         if self.available_parkinglots:
             return hq.heappop(self.available_parkinglots)
@@ -60,7 +54,7 @@ class ParkingLot:
             if car.get_car_color() == reqcolor:
                 carIDList.append(car.get_car_id())
         if carIDList:
-            print(", ".join(map(str,carID)))
+            print(", ".join(map(str,carIDList)))
             return True
         else:
             print("No cars parked in parkinglot with {} color".format(reqcolor))
