@@ -45,7 +45,7 @@ class ParkingLot:
     def getStatus(self):
         print("Slot No.\tID\tColor")
         for slot,car in self.slot_car_mapping.items():
-            print("{}\t{}\t{}".format(slot,car.get_car_id(),car.get_car_color()))
+            print("{}\t\t{}\t{}".format(slot,car.get_car_id(),car.get_car_color()))
         return True
     
     def ids_for_cars_with_color(self,reqcolor):
@@ -55,7 +55,7 @@ class ParkingLot:
                 carIDList.append(car.get_car_id())
         if carIDList:
             print(", ".join(map(str,carIDList)))
-            return True
+            return carIDList
         else:
             print("No cars parked in parkinglot with {} color".format(reqcolor))
             return False
@@ -67,7 +67,7 @@ class ParkingLot:
                 slotList.append(slot)
         if slotList:
             print(", ".join(map(str,slotList)))
-            return True
+            return slotList
         else:
             print("No slots parked with {} color car in parkinglot".format(reqcolor))
             return False
@@ -79,7 +79,7 @@ class ParkingLot:
                 reqslot = slot
         if reqslot > 0:
             print(reqslot)
-            return True
+            return reqslot
         else:
             print("Not Found")
             return False
