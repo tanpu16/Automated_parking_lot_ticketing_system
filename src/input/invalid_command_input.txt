@@ -1,0 +1,7 @@
+create_parking_lot 6
+park EUS687 White
+park 510IBD White
+park 6TRJ24 Black
+leave 4
+status
+InvalidCommandXYZ

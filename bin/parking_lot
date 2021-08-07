@@ -16,8 +16,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 # - if ruby
 #   ruby $DIR/../main.rb $1
 #
-# Important: Above commands is just examples, please modify to suit your require
-ment as necessary
+# Important: Above commands is just examples, please modify to suit your requirement as necessary
  
 if [ -z "$1" ] ; then
         python3 $DIR/../src/driver.py
