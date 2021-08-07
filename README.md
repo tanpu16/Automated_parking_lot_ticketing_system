@@ -7,7 +7,7 @@ Programming Language : Python
 Tested on Linux and Windows
 
 Files included:
-1. bin folder (Permissin need to be changed for setup and parking_lot -> chmod 777 <filename> or chmod x+ <filename>)
+1. bin folder (Permission need to be change for setup and parking_lot -> chmod 777 <filename> or chmod x+ <filename>)
 	a. setup : No need to install dependencies, compilation and bulit not required
 			   Added script to run the unit test suit
 					
@@ -22,7 +22,6 @@ Files included:
 	d. input folder : input files (valid and invalid)
 
 Check for alphanumeric car ID : only carID's having both alphabets and numbers are accepted (ex 514KZE) with size 6
-
 
 How to Run:
 $ bin/setup						   #unit test suit
